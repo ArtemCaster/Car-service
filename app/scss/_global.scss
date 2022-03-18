@@ -1,8 +1,8 @@
 body {
-  @extend %DMSans-700;
-  font-size: 14px;
-  line-height: 24px;
-  color: $default;
+  @extend %manrope-600;
+  font-size: 18px;
+  line-height: 31px;
+  color: $black-light;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,35 +10,92 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .h1{
-
+  font-size: 64px;
+  line-height: 84px;
+  @extend %manrope-800;
+  letter-spacing: -0.03em;
+  color: $black;
 }
 
 .h2{
-
+  font-size: 58px;
+  line-height: 76px;
+  @extend %manrope-800;
+  letter-spacing: -0.03em;
+  color: $black;
 }
 
 .h3{
-
+  font-size: 48px;
+  line-height: 67px;
+  @extend %manrope-700;
+  letter-spacing: -0.03em;
+  color: $black;
 }
 
 .h4{
-
+  font-size: 40px;
+  line-height: 56px;
+  @extend %manrope-700;
+  letter-spacing: -0.03em;
+  color: $black;
 }
 
 .h5{
-
+  font-size: 32px;
+  line-height: 48px;
+  @extend %manrope-700;
+  letter-spacing: -0.03em;
+  color: $black;
 }
 
 .h6{
-
+  font-size: 20px;
+  line-height: 30px;
+  @extend %manrope-600;
+  letter-spacing: -0.03em;
+  color: $black;
 }
 
-.title{
+.body-1{
+  font-size: 18px;
+  line-height: 32px;
+  @extend %manrope-600;
+  color: $black-light;
+}
 
+.body-2{
+  font-size: 16px;
+  line-height: 28px;
+  @extend %manrope-600;
+  color: $black-light;
+}
+
+.caption{
+  font-size: 16px;
+  line-height: 24px;
+  @extend %manrope-500;
+  color: $black-light;
+}
+
+.title-1{
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  @extend %manrope-600;
+  color: $black;
+}
+
+.title-2{
+  font-size: 24px;
+  line-height: 36px;
+  @extend %manrope-600;
+  letter-spacing: -0.03em;
+  color: $black;
 }
