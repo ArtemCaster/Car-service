@@ -1,11 +1,118 @@
-
-  @include('components/_head.html')
+@include('components/_head.html')
 
 <body>
 
   @include('components/_navbar.html')
   <main>
-    
+
+    <section class="section index-header">
+      <div class="container">
+        <div class="index-header__inner">
+          <div class="index-header__info">
+            <h1 class="index-header__title h1">
+              Get your vehicle service done online at one place
+            </h1>
+            <a class="btn index-header__btn" href="#">
+              Book a service
+            </a>
+            <div class="index-header__time">
+              <p class="caption index-header__time-subtitle">
+                We are open
+              </p>
+              <p class="index-header__time-text">
+                Monday to Friday 9:00 AM to 10:00 AM
+              </p>
+            </div>
+          </div>
+          <div class="index-header__image" style="background-image: url(../images/index-header-image.jpg);">
+            <div class="decor-time">
+              <div class="decor-time__inner">
+                <p class="title-2 decor-time__title">
+                  Quick service
+                </p>
+              </div>
+            </div>
+            <div class="decor-stars">
+              <div class="decor-stars__inner">
+                <p class="title-2 decor-stars__title">
+                  4.5/5
+                  <span class="caption">Rating</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section quote">
+      <div class="container">
+        <div class="quote__inner">
+          <div class="quote__info">
+            <h2 class="h2 quote__info-title">
+              We are taking car servicing seriously
+            </h2>
+            <ul class="quote-list">
+              <li class="quote-list__item">
+                <p class="title-2 quote-list__item-title">
+                  Convenient service
+                </p>
+                <p class="body-2 quote-list__item-text">
+                  Through True Rich Attended does no end it his mother since real had half every him.
+                </p>
+              </li>
+              <li class="quote-list__item">
+                <p class="title-2 quote-list__item-title">
+                  Expert mechanics
+                </p>
+                <p class="body-2 quote-list__item-text">
+                  Through True Rich Attended does no end it his mother since real had half every him.
+                </p>
+              </li>
+              <li class="quote-list__item">
+                <p class="title-2 quote-list__item-title">
+                  Transparent pricing
+                </p>
+                <p class="body-2 quote-list__item-text">
+                  Through True Rich Attended does no end it his mother since real had half every him.
+                </p>
+              </li>
+            </ul>
+            <a class="link body-1 quote__link" href="#">
+              Know more about us
+            </a>
+          </div>
+          <form class="quote__form">
+            <h3 class="h3 quote__form-title">
+              Get a quote for the car service
+            </h3>
+            <input class="quote__form-input" type="text" placeholder="Enter your location">
+            <input class="quote__form-input" type="email" placeholder="Enter your location">
+            <input class="quote__form-input" type="tel" placeholder="Your phone number">
+            <button class="btn quote__form-btn">
+              Get your quote
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
   @include('components/_footer.html')
 

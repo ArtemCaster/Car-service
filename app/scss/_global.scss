@@ -15,7 +15,7 @@ body {
   padding: 0 15px;
 }
 
-.h1{
+.h1 {
   font-size: 64px;
   line-height: 84px;
   @extend %manrope-800;
@@ -23,7 +23,7 @@ body {
   color: $black;
 }
 
-.h2{
+.h2 {
   font-size: 58px;
   line-height: 76px;
   @extend %manrope-800;
@@ -31,7 +31,7 @@ body {
   color: $black;
 }
 
-.h3{
+.h3 {
   font-size: 48px;
   line-height: 67px;
   @extend %manrope-700;
@@ -39,7 +39,7 @@ body {
   color: $black;
 }
 
-.h4{
+.h4 {
   font-size: 40px;
   line-height: 56px;
   @extend %manrope-700;
@@ -47,7 +47,7 @@ body {
   color: $black;
 }
 
-.h5{
+.h5 {
   font-size: 32px;
   line-height: 48px;
   @extend %manrope-700;
@@ -55,7 +55,7 @@ body {
   color: $black;
 }
 
-.h6{
+.h6 {
   font-size: 20px;
   line-height: 30px;
   @extend %manrope-600;
@@ -63,28 +63,28 @@ body {
   color: $black;
 }
 
-.body-1{
+.body-1 {
   font-size: 18px;
   line-height: 32px;
   @extend %manrope-600;
   color: $black;
 }
 
-.body-2{
+.body-2 {
   font-size: 16px;
   line-height: 28px;
   @extend %manrope-600;
   color: $black;
 }
 
-.caption{
+.caption {
   font-size: 16px;
   line-height: 24px;
   @extend %manrope-500;
   color: $black-light;
 }
 
-.title-1{
+.title-1 {
   font-size: 32px;
   line-height: 48px;
   letter-spacing: -0.03em;
@@ -92,7 +92,7 @@ body {
   color: $black;
 }
 
-.title-2{
+.title-2 {
   font-size: 24px;
   line-height: 36px;
   @extend %manrope-600;
@@ -100,6 +100,47 @@ body {
   color: $black;
 }
 
-.section{
+.section {
   padding: 128px 0;
+}
+
+.btn,
+.btn-dark {
+  background-color: $orange;
+  border-radius: 12px;
+  padding: 16px 40px;
+  @extend %manrope-600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $white;
+  display: inline-block;
+  transition: all 0.5s;
+  border: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-dark {
+  background-color: $black;
+  color: $white;
+}
+
+.link{
+  display: inline-block;
+  padding-right: 65px;
+  position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 16px;
+    background-image: url(../images/icons/arrow-right-black.svg);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

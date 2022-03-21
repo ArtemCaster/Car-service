@@ -1,0 +1,204 @@
+.index-header {
+  padding-top: 80px;
+  min-height: calc(100vh - 90px);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    max-width: 634px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    margin-bottom: 40px;
+  }
+
+  &__time {
+    padding-left: 43px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      background-image: url(../images/icons/clock.svg);
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__image {
+    min-width: 605px;
+    min-height: 632px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.decor-time {
+  width: 300px;
+  height: 120px;
+  background-color: rgba(225, 225, 225, 0.43);
+  border-radius: 60px;
+  padding: 10px;
+  margin-top: 70px;
+  margin-left: -40px;
+
+  &__inner {
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 71px;
+      height: 70px;
+      background-image: url(../images/icons/work-time.svg);
+      left: 16px;
+    }
+  }
+}
+
+.decor-stars {
+  width: 350px;
+  height: 120px;
+  background-color: rgba(225, 225, 225, 0.43);
+  border-radius: 60px;
+  padding: 10px;
+  align-self: flex-end;
+  margin-right: -40px;
+  margin-bottom: 70px;
+
+  &__inner {
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 185px;
+      height: 36px;
+      background-image: url(../images/icons/stars.svg);
+      right: 20px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 38px;
+  }
+}
+
+.quote {
+  background-color: $grey-light;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__info {
+    max-width: 583px;
+    margin-right: 70px;
+
+    &-title {
+      margin-bottom: 53px;
+    }
+  }
+
+  &-list__item {
+    max-width: 385px;
+    padding-left: 63px;
+    position: relative;
+
+    &-text {
+      opacity: 0.6;
+      margin-top: 8px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 32px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 47px;
+      height: 47px;
+      background-image: url(../images/icons/gear.svg);
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../images/icons/man.svg);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../images/icons/dollar.svg);
+    }
+  }
+
+  &__link {
+    margin-top: 32px;
+    margin-left: 63px;
+  }
+
+  &__form {
+    max-width: 524px;
+
+    &-title {
+      margin-bottom: 32px;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 22px 40px;
+      border: transparent;
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 28px;
+        @extend %manrope-600;
+        color: $black;
+        opacity: 0.5;
+      }
+    }
+
+    &-btn{
+      margin-top: 32px;
+    }
+  }
+}
