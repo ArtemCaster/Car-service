@@ -1,0 +1,23 @@
+.contactUs {
+  max-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__inner{
+    height: 500px;
+    width: 729px;
+    background-color: $orange;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    &-title{
+      color: $white;
+      margin-bottom: 48px;
+    }
+
+  }
+}

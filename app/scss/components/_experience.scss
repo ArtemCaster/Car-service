@@ -1,0 +1,14 @@
+.experience{
+  background-color: $grey-light;
+  padding: 48px 0;
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item-title{
+    color: $blue;
+  }
+}
