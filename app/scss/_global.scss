@@ -128,13 +128,13 @@ body {
   color: $white;
 }
 
-.link{
+.link {
   display: inline-block;
   padding-right: 65px;
   position: relative;
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     width: 53px;
     height: 16px;
@@ -142,5 +142,48 @@ body {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.process__list {
+  max-width: 432px;
+  list-style: none;
+
+  &-item {
+    padding-left: 96px;
+    position: relative;
+    counter-increment: number;
+
+    &:not(:last-child){
+      margin-bottom: 16px;
+
+      &::after{
+        content: '';
+        position: absolute;
+        left: 34px;
+        top: 70px;
+        height: calc(100% - 72px);
+        width: 0;
+        border: 2px dashed $orange;
+      }
+    }
+
+    &::before {
+      content: "0" counter(number);
+      position: absolute;
+      left: 0;
+      top: -10px;
+      width: 72px;
+      height: 72px;
+      background-color: $blue;
+      border-radius: 50%;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @extend %manrope-700;
+      font-size: 32px;
+      line-height: 24px;
+    }
   }
 }
