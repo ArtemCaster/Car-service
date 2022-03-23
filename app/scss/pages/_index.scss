@@ -1,6 +1,8 @@
 .index-header {
   padding-top: 80px;
   min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
 
   &__inner {
     display: flex;
@@ -49,9 +51,6 @@
   }
 }
 
-
-
-
 .decor-time {
   width: 300px;
   height: 120px;
@@ -82,10 +81,6 @@
     }
   }
 }
-
-
-
-
 
 .decor-stars {
   width: 350px;
@@ -126,21 +121,17 @@
   }
 }
 
-
-
-
-
-
 .quote {
   background-color: $grey-light;
 
   &__inner {
     display: flex;
+    justify-content: space-between;
   }
 
   &__info {
     max-width: 583px;
-    margin-right: 70px;
+    margin-right: 20px;
 
     &-title {
       margin-bottom: 53px;
@@ -185,7 +176,7 @@
   }
 
   &__form {
-    max-width: 524px;
+    max-width: 625px;
 
     &-title {
       margin-bottom: 32px;
@@ -209,32 +200,55 @@
       }
     }
 
-    &-btn{
+    &-btn {
       margin-top: 32px;
+    }
+  }
+}
+
+.process {
+  &__inner {
+    display: flex;
+  }
+
+  &__info {
+    max-width: 524px;
+    margin-right: 130px;
+
+    &-title {
+      margin-bottom: 16px;
+    }
+
+    &-text {
+      margin-bottom: 32px;
+      max-width: 437px;
     }
   }
 }
 
 
 
-
-.process{
+.offer{
+  background-color: $grey-light;
 
   &__inner{
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  &__info{
-    max-width: 524px;
-    margin-right: 130px;
+  &__subtitle{
+    margin-bottom: 8px;
+  }
 
-    &-title{
-      margin-bottom: 16px;
-    }
+  &__title{
+    max-width: 858px;
+    text-align: center;
+    margin-bottom: 64px;
+  }
 
-    &-text{
-      margin-bottom: 32px;
-      max-width: 437px;
-    }
+  &__link{
+    margin-top: 32px;
+    align-self: flex-end;
   }
 }

@@ -11,6 +11,7 @@ body {
 
 .container {
   max-width: 1310px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -184,6 +185,44 @@ body {
       @extend %manrope-700;
       font-size: 32px;
       line-height: 24px;
+    }
+  }
+}
+
+
+.offer-cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
+  &__item{
+    background-color: $white;
+    min-height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    cursor: pointer;
+
+    &-icon{
+      margin-bottom: 19px;
+      path{
+        fill: $black;
+        transition: all 0.8s;
+      }
+    }
+
+    &:hover{
+      background-color: $orange;
+      color: $white;
+
+      & .offer-cards__item-icon{
+        path{
+          fill: $white;
+        }
+      }
     }
   }
 }
