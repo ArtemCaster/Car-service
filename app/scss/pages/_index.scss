@@ -253,9 +253,21 @@
 
 
 
-//brands
+.brands{
 
+  &__title{
+    max-width: 362px;
+    margin: 0 auto 40px;
+  }
 
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+  }
+}
 
 
 .comments {
