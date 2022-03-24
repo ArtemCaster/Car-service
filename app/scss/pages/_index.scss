@@ -251,16 +251,13 @@
   }
 }
 
-
-
-.brands{
-
-  &__title{
+.brands {
+  &__title {
     max-width: 362px;
     margin: 0 auto 40px;
   }
 
-  &__list{
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,7 +265,6 @@
     flex-wrap: wrap;
   }
 }
-
 
 .comments {
   background-color: $grey-light;
@@ -344,6 +340,7 @@
   .slick-next {
     position: absolute;
     bottom: -30px;
+    right: 0;
     z-index: 10;
     width: 62px;
     height: 62px;
@@ -389,7 +386,6 @@
   }
 
   .slick-next {
-
     &.slick-disabled {
       right: 20px;
     }
@@ -403,6 +399,80 @@
         width: 22px;
         height: 16px;
         background-image: url(../images/icons/slider-arrows/arrow-right-black.svg);
+      }
+    }
+  }
+}
+
+.questions {
+  background-color: #e2e6e9;
+
+  &__title {
+    margin: 0 auto 95px;
+    max-width: 618px;
+  }
+
+  &-list {
+    max-width: 896px;
+    margin: 0 auto;
+  }
+
+  &-list__item {
+    background-color: $white;
+    padding: 40px;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // padding-bottom: 16px;
+    }
+
+    &-btn {
+      border: none;
+      width: 50px;
+      height: 50px;
+      background-color: $orange;
+      transition: all 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &::before {
+        content: "+";
+        @extend %manrope-500;
+        font-size: 40px;
+        line-height: 0%;
+        color: $white;
+        transition: all 0.5s;
+      }
+    }
+
+    &-text {
+      display: none;
+      p{
+        padding-right: 120px;
+        font-size: 18px;
+        line-height: 32px;
+        opacity: 0.8;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--active {
+      .questions-list__item-btn {
+        background-color: $grey;
+        opacity: 0.6;
+
+        &::before {
+          content: "-";
+        }
       }
     }
   }

@@ -15,7 +15,18 @@ $(function () {
     slidesToShow: 2,
     dots: true,
     infinite: false,
-    // centerPadding: '60px',
   });
+
+  $('.questions-list__item--active').find('.questions-list__item-text').slideDown();
+
+  $('.questions-list__item').on('click', function () {
+    $(this).toggleClass('questions-list__item--active');
+
+    if ($(this).hasClass('questions-list__item--active')) {
+      $(this).find('.questions-list__item-text').slideDown(500);
+    } else {
+      $(this).find('.questions-list__item-text').slideUp(500);
+    }
+  })
 
 });
