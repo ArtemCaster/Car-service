@@ -1,0 +1,105 @@
+.services-header{
+  padding-top: 80px;
+}
+
+
+.services-cards {
+  background-color: $grey-light;
+
+  .offer-cards {
+    gap: 32px;
+
+    &__item-img {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    &__item-title {
+      margin-bottom: 16px;
+    }
+
+    &__item-text {
+      opacity: 0.7;
+      margin-bottom: 32px;
+    }
+
+    &__item-link {
+      color: $black;
+    }
+
+    &__item--big {
+      cursor: default;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      padding: 64px 48px;
+
+      &:hover {
+        background-color: $white;
+      }
+
+      grid-row-start: 1;
+      grid-column-start: 1;
+
+      grid-row-end: 4;
+      grid-column-end: 3;
+    }
+  }
+}
+
+.info-one,
+.info-two {
+  display: flex;
+  justify-content: space-between;
+
+  &__images {
+    display: flex;
+    column-gap: 16px;
+  }
+}
+
+.info-one {
+  margin-bottom: 128px;
+
+  &__inner {
+    max-width: 547px;
+
+    &-title {
+      margin-bottom: 53px;
+    }
+
+    &-item {
+      padding-left: 72px;
+      position: relative;
+
+      &:not(:first-child) {
+        margin-top: 32px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 49px;
+        background-image: url(../images/icons/Checkmark.svg);
+        left: 0;
+      }
+    }
+  }
+}
+
+.info-two {
+  &__inner {
+    max-width: 547px;
+
+    &-title {
+      margin-bottom: 32px;
+    }
+
+    &-text{
+      margin-bottom: 32px;
+      max-width: 512px;
+    }
+  }
+}
