@@ -226,29 +226,172 @@
   }
 }
 
-
-
-.offer{
+.offer {
   background-color: $grey-light;
 
-  &__inner{
+  &__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  &__subtitle{
+  &__subtitle {
     margin-bottom: 8px;
   }
 
-  &__title{
+  &__title {
     max-width: 858px;
     text-align: center;
     margin-bottom: 64px;
   }
 
-  &__link{
+  &__link {
     margin-top: 32px;
     align-self: flex-end;
+  }
+}
+
+
+
+//brands
+
+
+
+
+.comments {
+  background-color: $grey-light;
+
+  &__title {
+    max-width: 909px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 94px;
+  }
+}
+
+.comments-slider {
+  position: relative;
+
+  &__wrapper {
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+
+  &__item {
+    padding: 72px;
+    width: 100%;
+    background-color: $white;
+  }
+
+  &__info {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    float: left;
+    margin-right: 16px;
+  }
+
+  .slick-slide {
+    margin: 0 26px;
+  }
+
+  .slick-list {
+    margin: 0 -26px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 11px;
+    margin-top: 47px;
+
+    li {
+      line-height: 0;
+    }
+
+    button {
+      border: none;
+      font-size: 0;
+      background-color: $grey;
+      width: 32px;
+      height: 4px;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+
+    li.slick-active {
+      button {
+        background-color: $orange;
+      }
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    bottom: -30px;
+    z-index: 10;
+    width: 62px;
+    height: 62px;
+    background-color: $black;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.slick-disabled {
+      background-color: $white;
+      width: 46px;
+      height: 46px;
+      bottom: -22px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 16px;
+    }
+  }
+
+  .slick-prev {
+    right: 75px;
+
+    &::before {
+      background-image: url(../images/icons/slider-arrows/arrow-left.svg);
+    }
+
+    &.slick-disabled {
+      &::before {
+        width: 22px;
+        height: 16px;
+        background-image: url(../images/icons/slider-arrows/arrow-left-black.svg);
+      }
+    }
+  }
+
+  .slick-next {
+
+    &.slick-disabled {
+      right: 20px;
+    }
+
+    &::before {
+      background-image: url(../images/icons/slider-arrows/arrow-right.svg);
+    }
+
+    &.slick-disabled {
+      &::before {
+        width: 22px;
+        height: 16px;
+        background-image: url(../images/icons/slider-arrows/arrow-right-black.svg);
+      }
+    }
   }
 }

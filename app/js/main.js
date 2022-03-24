@@ -11,5 +11,11 @@ $(function () {
 
   wow.init();
 
+  $('.comments-slider').slick({
+    slidesToShow: 2,
+    dots: true,
+    infinite: false,
+    // centerPadding: '60px',
+  });
 
 });
