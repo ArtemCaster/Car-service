@@ -1,0 +1,53 @@
+.blog-one {
+  &__inner {
+    max-width: 896px;
+    margin: 0 auto;
+
+    p, blockquote {
+      @extend %manrope-600;
+      font-size: 16px;
+      line-height: 28px;
+      opacity: 0.6;
+      color: $black;
+      margin-bottom: 30px;
+    }
+
+    h4,h5 {
+      @extend %manrope-700;
+      font-size: 40px;
+      line-height: 56px;
+      letter-spacing: -0.03em;
+      color: $black;
+      margin-bottom: 30px;
+    }
+
+    h5{
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 80px;
+      margin-top: 50px;
+    }
+
+    blockquote{
+      padding: 8px 0 8px 32px;
+      border-left: 3px solid $black;
+    }
+
+  }
+
+  &__title {
+    margin: 16px 0;
+  }
+
+  &__bg {
+    margin: 64px 0;
+    width: 100%;
+    min-width: 512px;
+    object-fit: cover;
+  }
+}
