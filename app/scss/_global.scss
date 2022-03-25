@@ -133,6 +133,7 @@ body {
   display: inline-block;
   padding-right: 65px;
   position: relative;
+  color: $black;
 
   &::after {
     content: "";
@@ -144,6 +145,11 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+.blog-date{
+  color: $grey;
+  opacity: 0.8;
 }
 
 .process__list {

@@ -1,0 +1,136 @@
+.blog-header{
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  &__title{
+    color: $white;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__content{
+    max-width: 1053px;
+    background-color: $black;
+    padding: 128px 64px;
+
+    &-subtitle{
+      text-transform: uppercase;
+      color: $orange;
+      margin-bottom: 16px;
+    }
+
+    &-title{
+      color: $white;
+      max-width: 582px;
+      margin-bottom: 16px;
+    }
+
+    &-text{
+      color: $white;
+      max-width: 614px;
+      opacity: 0.8;
+      margin-bottom: 48px;
+    }
+
+    &-link{
+      float: left;
+      margin-right: 32px;
+    }
+
+    &-date{
+      color: $white;
+      padding: 16px 0;
+      display: inline-block;
+      opacity: 0.8;
+    }
+  }
+}
+
+.blog-current{
+  background-color: $grey-light;
+
+  &__inner{
+    display: flex;
+  }
+
+  &__one{
+    max-width: 537px;
+    padding: 32px;
+    background-color: $white;
+    margin-right: 32px;
+
+    &-image{
+      object-fit: cover;
+      margin-bottom: 32px;
+    }
+
+    &-date{
+      margin: 32px 0 16px 0;
+    }
+
+    &-title{
+      margin-bottom: 16px;
+    }
+
+    &-text{
+      margin-bottom: 32px;
+      opacity: 0.6;
+    }
+  }
+
+  &__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:first-child){
+      margin-top: 32px;
+    }
+
+    &-img{
+      display: block;
+      max-width: 192px;
+      max-height: 192px;
+      object-fit: cover;
+      object-position: center;
+      margin-right: 24px;
+    }
+
+    &-title{
+      max-width: 478px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.blog-cards{
+
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
+  }
+
+  &__item{
+
+    &-img{
+      width: 100%;
+      max-height: 266px;
+      object-fit: cover;
+    }
+
+    &-date{
+      margin: 24px 0 16px 0;
+    }
+
+    &-title{
+      margin-bottom: 16px;
+      display: block;
+    }
+  }
+}
