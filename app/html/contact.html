@@ -1,0 +1,35 @@
+@include('components/_head.html')
+
+<body>
+
+  @include('components/_navbar.html')
+  <main>
+
+    <section class="section contact">
+      <div class="container">
+        <div class="contact__inner">
+          <h2 class="h1 contact__title">
+            Get in touch with our experts
+          </h2>
+          <form class="contact__form" action="#">
+            <input class="contact__form-input" type="name" placeholder="Your full Name">
+            <input class="contact__form-input" type="email" placeholder="Your Email">
+            <input class="contact__form-input" type="text" placeholder="Select service type">
+            <input class="contact__form-input" type="text" placeholder="Message">
+            <button class="btn contact__form-btn">
+              Send message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('components/_footer.html')
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
