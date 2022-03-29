@@ -39,6 +39,8 @@
     &-link {
       float: left;
       margin-right: 32px;
+      position: relative;
+      z-index: 1;
     }
 
     &-date {

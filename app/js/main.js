@@ -4,7 +4,7 @@ $(function () {
     {
       boxClass: 'wow',
       animateClass: 'animate__animated --active',
-      offset: 300,
+      offset: 100,
       mobile: false,
     }
   )
