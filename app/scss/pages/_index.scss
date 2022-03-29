@@ -1,6 +1,6 @@
 .index-header {
   padding-top: 80px;
-  min-height: calc(100vh - 90px);
+  min-height: calc((var(--vh, 1vh) * 100) - 90px);
   display: flex;
   align-items: center;
 
@@ -12,6 +12,7 @@
 
   &__info {
     max-width: 634px;
+    margin-right: 20px;
   }
 
   &__title {
@@ -255,6 +256,7 @@
   &__title {
     max-width: 362px;
     margin: 0 auto 40px;
+    text-align: center;
   }
 
   &__list {
@@ -475,5 +477,130 @@
         }
       }
     }
+  }
+}
+
+
+@media (max-width: 1400px){
+  .decor-stars{
+    margin-right: -15px;
+  }
+
+  .decor-time{
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 1300px){
+
+  .index-header.section{
+    padding: 0;
+  }
+
+  .index-header__image{
+    display: none;
+  }
+
+  .index-header__inner{
+    justify-content: center;
+  }
+
+  .index-header__info{
+    margin: 0;
+    text-align: center;
+  }
+
+  .index-header__time{
+    padding-left: 0;
+
+    &::before{
+      display: none;
+    }
+  }
+
+  .index-header__title{
+    max-width: 560px;
+  }
+
+  .quote__form-input{
+    padding: 14px 20px;
+  }
+
+  .process__info{
+    margin-right: 40px;
+  }
+
+  .comments__title{
+    max-width: 540px;
+  }
+
+  .comments-slider__item{
+    padding: 40px;
+  }
+
+  .comments__title{
+    margin-bottom: 50px;
+  }
+
+  .questions-list{
+
+    &__item{
+      padding: 28px;
+    }
+  }
+}
+
+
+@media (max-width: 980px){
+  .quote__inner{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .quote__form{
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 690px){
+  .process__inner{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .questions-list{
+
+    &__item{
+      padding: 20px;
+    }
+
+    &__item-text p{
+      font-size: 12px;
+      line-height: 20px;
+      padding-right: 70px;
+      padding-top: 15px;
+    }
+
+    &__item-btn{
+      width: 35px;
+      height: 35px;
+      margin-left: 10px;
+
+      &::before{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 490px){
+  .index-header__title{
+    max-width: 327px;
+  }
+
+  .brands__list{
+    justify-content: center;
   }
 }

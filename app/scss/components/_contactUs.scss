@@ -6,7 +6,7 @@
 
   &__inner{
     height: 500px;
-    width: 729px;
+    max-width: 729px;
     background-color: $orange;
     padding: 0 80px;
     display: flex;
@@ -18,6 +18,35 @@
       color: $white;
       margin-bottom: 48px;
     }
-
   }
+}
+
+@media (max-width: 980px){
+  .contactUs__inner{
+    height: 300px;
+  }
+}
+
+@media (max-width: 690px){
+
+  .contactUs{
+
+    .container{
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 690px){
+
+  .contactUs__inner{
+    padding: 0 30px;
+    text-align: center;
+    opacity: 0.9;
+
+    &-link{
+      margin: 0 auto;
+    }
+  }
+
 }

@@ -6,9 +6,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   &__item-title{
     color: $blue;
+  }
+}
+
+@media (max-width: 690px) {
+  .experience__list{
+    justify-content: center;
+  }
+
+  .experience__item-title{
+    text-align: center;
   }
 }
